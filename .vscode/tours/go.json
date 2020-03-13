@@ -1,0 +1,51 @@
+{
+  "title": "Go",
+  "description": "",
+  "steps": [
+    {
+      "file": "go/makefile",
+      "line": 8,
+      "description": "With `make dev` we can start the TDD process"
+    },
+    {
+      "file": "go/docker-compose.yaml",
+      "line": 6,
+      "description": "This docker service is going to be started"
+    },
+    {
+      "file": "go/_scripts/dev.sh",
+      "line": 7,
+      "description": "The scripts install to development tools"
+    },
+    {
+      "file": "go/_scripts/dev.sh",
+      "line": 10,
+      "description": "And start the service"
+    },
+    {
+      "file": "go/modd-dev.conf",
+      "line": 2,
+      "description": "We format the code"
+    },
+    {
+      "file": "go/modd-dev.conf",
+      "line": 3,
+      "description": "clear the console for better readability"
+    },
+    {
+      "file": "go/modd-dev.conf",
+      "line": 4,
+      "description": "sort of linting"
+    },
+    {
+      "file": "go/modd-dev.conf",
+      "line": 5,
+      "description": "and start the test process"
+    },
+    {
+      "file": "go/src/main_test.go",
+      "line": 5,
+      "description": "This the function that going to run"
+    }
+  ]
+}
