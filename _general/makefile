@@ -18,7 +18,7 @@ test:
 
 exec: 
 	$(eval export docker_image := dev)
-	$(eval export cmd := sh)
+	$(eval export cmd := bash)
 	@make _start
 
 # do not start these: these are configurations and templates

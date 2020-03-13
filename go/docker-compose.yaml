@@ -4,10 +4,19 @@ services:
     build: .
 
   go-project-dev:
-    image: "golang:1.12"
+    image: "golang:1.14"
     stdin_open: true
     tty: true
     volumes:
       - .:/app
       - ./.go:/go
     command: ["sh", "-c", "/app/_scripts/dev.sh"]
+
+  go-project-run:
+    image: "golang:1.14"
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/app
+      - ./.go:/go
+    command: ["sh", "-c", "/app/_scripts/run.sh"]
