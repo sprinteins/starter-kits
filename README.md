@@ -10,7 +10,8 @@ Starter Kits for different technology combinations
 
 ## Back End
 
-1. [Node + Express + TypeScript](node-typescript)
+1. [Node + Express + TypeScript](./node-typescript)
+2. [Go](./go)
 
 ## Front End
 
