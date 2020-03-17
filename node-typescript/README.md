@@ -1,4 +1,4 @@
-# Node with TypeScript and Express
+# [Node](https://nodejs.org) + [TypeScript](https://www.typescriptlang.org/) + [Express](https://expressjs.com/) · ![In Progress](https://img.shields.io/badge/-In%20Progress-yellow)
 
 ## TL;DR
 
@@ -17,7 +17,6 @@ It is recommended to use `make dev` to develop.
     ├─ scripts/     // Scripts to help developers
     ├─ src/         // The source code
     └─ test/        // Test entrypoint and helpers
-
 
 ### Documentation (doc/)
 
@@ -80,7 +79,7 @@ The `server/` contains everything to run the server. The express configuration i
 The `Makefile` will be used by developers to execute different actions of the projects
 
 | Action      | Description                                                     |
-|-------------|-----------------------------------------------------------------|
+| ----------- | --------------------------------------------------------------- |
 | build       | Build production ready docker image                             |
 | publish     | Publish the image to the repository                             |
 | dev         | Start container for TDD/BDD development with file watcher       |
