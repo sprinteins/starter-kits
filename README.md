@@ -16,9 +16,11 @@ for multiple technology combinations
 
 ### Back End
 
-1. [Node + Express + TypeScript](./node-typescript)
-2. [Go](./go)
-
+1. [Node + Express + TypeScript](./node-typescript) (NET)  
+  Good for all sort of BE services
+2. [Go](./go) (GO)  
+  Good for all sort of BE services
+  
 ### Front End
 
 1. [React + Storybook+ TypeScript](./react-storybook-typescript) (RST)  
