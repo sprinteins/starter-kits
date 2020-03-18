@@ -7,7 +7,18 @@
 
 ## How to Use
 
-- **`make run`** to start the development container  
-  it has a file-watcher and hot-reload if possible
-  alternatively, `yarn start` to start without docker
-- **`yarn test`** this command is an exception as running
+<dl>
+  <dt>make dev</dt>
+    <dd>Starts a TDD style container (unit tests + file watcher)</dd>
+  <dt>make run</dt>
+    <dd>Starts the service with a file watcher</dd>
+  <dt>make build</dt>
+    <dd>Builds the production docker image</dd>
+  <dt>make test</dt>
+    <dd>Runs the unit tests in CI mode (no file watcher)</dd>
+  <dt>make exec</dt>
+    <dd>
+      Starts only the development container and enters its shell.<br/>
+      Similar to "docker exec".
+    </dd>
+</dl>
