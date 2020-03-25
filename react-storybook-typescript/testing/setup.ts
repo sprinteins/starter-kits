@@ -6,21 +6,22 @@ import { toDefault } from './util'
 
 
 before(async () => {
+    console.log('wating for dev server');
     await waitForDevServer()
+    await startBrowser();
 })
 
-afterEach(async () => {
-    const b = await startBrowser()
-    await b.closeAllPages()
-
-})
+after(async () => {
+    const b = await startBrowser();
+    await b.closeAllPages();
+});
 
 
 async function waitForDevServer(): Promise<void> {
 
-    const timeoutMS = parseInt(toDefault(process.env.TEST_DEV_SERVER_TIMEOUT, "10000"))
-    const host = toDefault(process.env.TEST_DEV_SERVER_HOST, "localhost")
-    const port = parseInt(toDefault(process.env.TEST_DEV_SERVER_PORT, "6006"))
+    const timeoutMS = parseInt(toDefault(process.env.DEV_SERVER_TIMEOUT, "10000"))
+    const host = toDefault(process.env.DEV_SERVER_HOST, "localhost")
+    const port = parseInt(toDefault(process.env.DEV_SERVER_PORT, "9000"))
 
     console.log(`waiting for UI at ${host}:${port}`);
 

@@ -12,7 +12,10 @@ services:
     volumes: 
         - ./:/app
     ports: 
-        - 6006:6006
+        - 9000:9000
+    environment: 
+      - DEV_SERVER_PORT=9000
+      - NODE_ENV=DEV
     command: ["sh", "-c", "yarn install && yarn start"]
 
   ui-lib-dev:
@@ -23,10 +26,11 @@ services:
     volumes: 
         - ./:/app
     ports: 
-        - 6006:6006
+        - 9000:9000
     environment: 
       - PUPPETEER_URL=http://host.docker.internal:9922
-      - CI=false
+      - DEV_SERVER_PORT=9000
+      - NODE_ENV=DEV
     command: ["sh", "-c", "yarn install && yarn tdd"]
 
   ui-lib-test:
