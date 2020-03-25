@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 yarn link --cwd="./testing"
 yarn link "testing"

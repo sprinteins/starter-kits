@@ -1,3 +1,3 @@
-#!/bin/bash
+#!/bin/sh
 
-CI=false yarn tdd
+NODE_ENV=DEV yarn tdd

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 yarn concurrently \
     --prefix-colors blue,green \

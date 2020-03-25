@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 chromium=/Applications/Chromium.app/Contents/MacOS/Chromium
 

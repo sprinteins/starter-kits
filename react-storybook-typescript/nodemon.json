@@ -1,0 +1,11 @@
+{
+  "verbose": false,
+  "events": {},
+  "watch": [
+    "src/"
+  ],
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "ext": "ts,tsx,json"
+}
