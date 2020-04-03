@@ -33,7 +33,6 @@ export class Chrome {
     }
 
     private async launch(isHeadless: boolean): Promise<puppeteer.Browser> {
-        console.log('launching chrome: is headless?', isHeadless);
         const browser = await puppeteer.launch({
             headless: isHeadless,
             slowMo: this.slowMo,

@@ -6,9 +6,8 @@ import { toDefault } from './util'
 
 
 before(async () => {
-    console.log('wating for dev server');
     await waitForDevServer()
-    await startBrowser();
+    // await startBrowser();
 })
 
 after(async () => {

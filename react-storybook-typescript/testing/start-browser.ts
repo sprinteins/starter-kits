@@ -1,18 +1,17 @@
 import { Browser, Chrome } from './browser'
 
-let browser: Browser;
+// let browser: Browser;
 
 export async function startBrowser(slowMo: number = 0): Promise<Browser> {
-    if (!browser) {
-        const puppeteerUrl = process.env.PUPPETEER_URL as string
-        const nodeEnv = process.env.NODE_ENV;
-        const isHeadless = nodeEnv === 'CI';
+    // if (!browser) {
 
-        browser = await Chrome.New(isHeadless, puppeteerUrl, slowMo)
+    // }
+    const puppeteerUrl = process.env.PUPPETEER_URL as string
+    const nodeEnv = process.env.NODE_ENV;
+    const isHeadless = nodeEnv === 'CI';
 
-        registerNodeHooks(browser)
-    }
-
+    const browser = await Chrome.New(isHeadless, puppeteerUrl, slowMo)
+    registerNodeHooks(browser)
     return browser
 }
 
