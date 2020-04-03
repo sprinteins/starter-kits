@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "outDir": "build/lib",
+        "outDir": "lib",
         "module": "commonjs",
         "target": "es5",
         "lib": [
@@ -10,6 +10,7 @@
             "es2017",
             "dom"
         ],
+        "inlineSourceMap": true,
         "allowJs": false,
         "jsx": "react",
         "moduleResolution": "node",
@@ -30,12 +31,14 @@
         "emitDecoratorMetadata": true
     },
     "include": [
-        "src/**/*"
+        "src/components/*"
     ],
     "exclude": [
+        "**/*.spec.ts",
+        "**/*.stories.spec.tsx",
+        "**/*.stories.tsx",
         "node_modules",
         "build",
-        "scripts",
-        "**/*.spec.ts"
+        "scripts"
     ]
 }

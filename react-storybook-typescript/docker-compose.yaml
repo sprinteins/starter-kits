@@ -47,3 +47,14 @@ services:
     ports: 
         - 9922:9922
     command: ["sh", "-c", "yarn install && yarn test"]
+
+  ui-lib-build:
+    build: 
+      context: .
+      dockerfile: "builder.Dockerfile"
+    stdin_open: true
+    tty: true
+    working_dir: "/app"
+    volumes:
+      - ./lib:/app/lib
+    command: ["sh", "-c", "yarn install --prod && yarn build-lib"]

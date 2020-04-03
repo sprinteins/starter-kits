@@ -1,12 +1,15 @@
 {
   "name": "react-storybook-typescript",
   "version": "1.0.0",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "engines": {
     "node": ">=10.00"
   },
   "description": "",
   "scripts": {
     "start": "./scripts/npm-start.sh",
+    "build-lib": "./scripts/npm-build-lib.sh",
     "build": "build-storybook -c .storybook -o build",
     "test": "./scripts/npm-test.sh",
     "tdd": "./scripts/npm-tdd.sh",
@@ -21,14 +24,16 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "node-fetch": "^2.6.0"
+    "@storybook/react": "^5.3.14",
+    "@types/node": "^13.7.7",
+    "react": "^16.13.0",
+    "typescript": "^3.8.3"
   },
   "devDependencies": {
     "@babel/core": "^7.8.6",
     "@storybook/react": "^5.3.14",
     "@types/chai": "^4.2.10",
     "@types/mocha": "^7.0.2",
-    "@types/node": "^13.7.7",
     "@types/node-fetch": "^2.5.5",
     "@types/puppeteer": "^2.0.1",
     "awesome-typescript-loader": "^5.2.1",
@@ -38,7 +43,7 @@
     "mocha": "^7.1.0",
     "nodemon": "^2.0.2",
     "puppeteer": "^2.1.1",
-    "ts-node": "^8.6.2",
-    "typescript": "^3.8.3"
+    "react-dom": "^16.13.1",
+    "ts-node": "^8.6.2"
   }
 }

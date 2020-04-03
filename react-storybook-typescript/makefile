@@ -2,6 +2,9 @@
 build: _name
 	@docker-compose build ${name}
 
+build-lib: _name
+	@docker-compose up --build ${name}-build
+
 run:
 	$(eval export docker_image := run)
 	@make _start

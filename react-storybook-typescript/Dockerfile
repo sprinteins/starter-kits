@@ -1,9 +1,15 @@
 FROM node:13.10 as builder
 
+
+WORKDIR /tmp/deps
+COPY package.json .
+COPY yarn.lock .
+# because of the linked testing package
+RUN yarn install --ignore-scripts 
+
 WORKDIR /app
 COPY . .
-
-RUN yarn install
+RUN cp -R /tmp/deps/node_modules .
 RUN yarn build
 
 FROM nginx:1.15.11-alpine as runner
