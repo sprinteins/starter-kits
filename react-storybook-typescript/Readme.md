@@ -100,7 +100,7 @@ In this folder there are required files:
 
 * `index.ts`: we think of the folder as a package and `index.ts` exports everything
   that is meant for public usage.  
-  ✏️ Example: [index.ts](./src/components/button/button.ts)
+  ✏️ Example: [index.ts](./src/components/button/index.ts)
 
   ```js
   export { default as Button } from './button'
