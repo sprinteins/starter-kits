@@ -5,6 +5,12 @@
 The setup provides the common components and stylings to the front end apps
 in the project
 
+## Install
+
+```sh
+npx degit sprinteins/starter-kits/react-storybook-typescript <target-folder>
+```
+
 ## Best Suited for
 
 - Standalone UI Library
