@@ -1,6 +1,6 @@
 FROM node:13.10
 
-# Build Puppeteer
+
 RUN apt-get update && \
     apt-get install -yq gconf-service libasound2 libatk1.0-0 libc6 libcairo2 libcups2 libdbus-1-3 \
     libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 \
@@ -27,10 +27,6 @@ RUN mkdir /screenshots \
     && chown -R pptruser:pptruser /home/pptruser \
     && chown -R pptruser:pptruser /usr/local/share/.config/yarn/global/node_modules \
     && chown -R pptruser:pptruser /screenshots 
-# && chown -R pptruser:pptruser /tools
 
-# Run everything after as non-privileged user.
 USER pptruser
 
-
-# CMD ["/usr/local/share/.config/yarn/global/node_modules/puppeteer/.local-chromium/linux-588429/chrome-linux/chrome", "--no-sandbox", "--headless", "--disable-setuid-sandbox", "--enable-automation", "--lang=de", "--remote-debugging-port=9988" ]
