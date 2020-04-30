@@ -1,0 +1,35 @@
+version: "3.6"
+networks:
+    foo-system:
+      driver: bridge
+services:
+    router: 
+        image: "traefik:v1.7-alpine"
+        ports:
+            - "7000:7000" # open this
+            - "9999:9999" # traefik ui
+        volumes:
+            - ./traefik.toml:/etc/traefik/traefik.toml
+        networks:
+            - foo-system
+
+    service1:
+        image: "service1"
+        depends_on: 
+            - "router"
+        networks:
+            - foo-system
+
+    service2:
+        image: "service2"
+        depends_on: 
+            - "router"
+        networks:
+            - foo-system
+    
+    service3:
+        image: "service3"
+        depends_on: 
+            - "router"
+        networks:
+            - foo-system
