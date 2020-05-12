@@ -1,4 +1,4 @@
-# [Basic Micro-Services Kit](./)
+# Basic Micro-Services Kit
 
 > **Note:** This starter kit is optimized for a polyrepo, but can be used in a monorepo too.
 
