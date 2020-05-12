@@ -30,6 +30,7 @@ for multiple technology combinations
 ### Project Structure
 
 - [Micro-Services in Polyrepo](./microservices-polyrepo)
+  Basic micro-service structure for Polyrepo projects
   
 ## How to Install
 
