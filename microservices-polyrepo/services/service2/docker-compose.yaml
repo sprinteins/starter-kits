@@ -1,0 +1,20 @@
+version: "3.6"
+networks:
+    local_foo-system:
+        external: true
+services:
+    
+    service2:
+        build: .
+        image: "service2"
+
+    service2-run:
+        image: "nginx:1.17-alpine"
+        stdin_open: true
+        tty: true
+        networks:
+            - local_foo-system
+        volumes:
+            - ./src/:/usr/share/nginx/html
+            - ./nginx.conf:/etc/nginx/nginx.conf
+        command: ["nginx" , "-g", "daemon off;"]

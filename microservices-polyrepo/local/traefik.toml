@@ -1,0 +1,56 @@
+
+defaultEntryPoints = ["http"]
+
+[entryPoints]
+  [entryPoints.http]
+  address = ":7000"
+  [entryPoints.gatewayui]
+  address = ":9999"
+
+[api]
+entryPoint = "gatewayui"
+debug = true
+
+[ping]
+[file]
+
+
+
+
+[frontends]
+
+    [frontends.service1]
+        backend="service1"
+        [frontends.service1.routes.host-matcher]
+            rule="HostRegexp:{host:.*}"
+        [frontends.service1.routes.path-matcher]
+            rule="PathPrefix:/service1"
+        
+    [frontends.service2]
+        backend="service2"
+        [frontends.service2.routes.host-matcher]
+            rule="HostRegexp:{host:.*}"
+        [frontends.service2.routes.path-matcher]
+            rule="PathPrefix:/service2"
+
+    [frontends.service3]
+        backend="service3"
+        [frontends.service3.routes.host-matcher]
+            rule="HostRegexp:{host:.*}"
+        [frontends.service3.routes.path-matcher]
+            rule="PathPrefix:/service3"
+
+[backends]
+
+    [backends.service1]
+        [backends.service1.servers.srv1]
+            url = "http://service1:8080"
+    
+    [backends.service2]
+        [backends.service2.servers.srv1]
+            url = "http://service2:8080"
+    
+    [backends.service3]
+        [backends.service3.servers.srv1]
+            url = "http://service3:8080"
+     
