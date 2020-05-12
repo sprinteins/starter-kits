@@ -33,11 +33,13 @@
 
   ```sh
   cd local
-  docker-compose up router
+  docker-compose up -d router
   cd ..
-  cd service1
+  cd services/service1
   make run
   ```
+
+Open browser at [http://localhost:7000/service1](http://localhost:7000/service1).
 
 ## Structure
   
@@ -252,9 +254,9 @@ This is a great way to check for integration problems and try out new functional
 
 ```sh
 cd local
-docker-compose up router
+docker-compose up -d router
 cd ..
-cd service1
+cd services/service1
 make run
 ```
 
