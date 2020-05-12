@@ -29,7 +29,7 @@ for multiple technology combinations
 
 ### Project Structure
 
-- [Micro-Services in Polyrepo](./microservices-polyrepo/Architecture.md)
+- [Micro-Services in Polyrepo](./microservices-polyrepo)
   
 ## How to Install
 
