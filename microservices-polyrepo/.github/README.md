@@ -3,6 +3,8 @@
 > **Note:** This starter kit is optimized for a polyrepo, but can be used in a monorepo too.
 
 - [Basic Micro-Services Kit](#basic-micro-services-kit)
+  - [TL;DR](#tldr)
+  - [Structure](#structure)
   - [Use Cases](#use-cases)
     - [Local Setup and Updates](#local-setup-and-updates)
     - [Partial Systems](#partial-systems)
@@ -11,6 +13,34 @@
     - [Makefiles](#makefiles)
     - [Docker-Compose.yaml Files](#docker-composeyaml-files)
 
+## TL;DR
+
+- To start the whole system
+
+  ```sh
+  cd local
+  docker-compose up
+  ```
+
+- To start only needed services
+
+  ```sh
+  cd local
+  docker-compose up service1
+  ```
+
+- To develop a service
+
+  ```sh
+  cd local
+  docker-compose up router
+  cd ..
+  cd service1
+  make run
+  ```
+
+## Structure
+  
 The structure has two key points:
 
 - [`local`](./local) folder contains the configuration to run the whole system
@@ -76,7 +106,13 @@ and be flexible.
 ### Local Setup and Updates
 
 Sometimes one just needs the system to run locally.
-In this case, the system can be started with the command `docker-compose up` in the `local` folder.
+In this case, the system can be started with the following command:
+
+```sh
+cd local
+docker-compose up
+```
+
 It than runs as depicted above in `Graphic: Micro-Services Basic Structure`
 
 It can be demoed or tested easily this way.
@@ -143,10 +179,16 @@ Graphic: Partially Running System
 ```
 
 For example, if one wants to start only `SERVICE 1` one only has to
-parametrize the `up` command:  `docker-compose up service1`.
+parametrize the `up` command:
+
+```sh
+cd local
+docker-compose up service1
+```
+
 The `depends_on` config makes sure the `ROUTER` and if necessary databases are also started.
 
-> **Hint**: Bigger system may have lot of services that have dependencies.  
+> **Hint:** Bigger system may have lot of services that have dependencies.  
 > These `docker-compose.yaml` files get quickly unreadable.  
 > In this case we use [↗ Rapid Compose](https://github.com/trusz/rapid-compose)
 
@@ -208,6 +250,17 @@ where the production-ready services are running. They take the place of their pr
 
 This is a great way to check for integration problems and try out new functionality.
 
+```sh
+cd local
+docker-compose up router
+cd ..
+cd service1
+make run
+```
+
+> **Info:** In a monorepo the make scripts make sure the router is running.  
+> Here we have to start it manually.
+
 ## Details
 
 Here we explain the details of the setup.
@@ -217,12 +270,12 @@ Here we explain the details of the setup.
 Makefiles are a great way to automatize without depending on technology stack specific toolings as
 they available on most of the environments
 
-> **Hint**: More on makefiles: [↗ Makefile](https://en.wikipedia.org/wiki/Makefile)
+> **Hint:** More on makefiles: [↗ Makefile](https://en.wikipedia.org/wiki/Makefile)
 
 The services' [`makefiles`](./makefile) have been created for a polyrepo setup.
 They contain their own templates and are independent of each other.
 
-> **Info**: in a monorepo setup the makefile targets would only
+> **Info:** In a monorepo setup the makefile targets would only
 > parametrize scripts with the service names, and the scripts would be
 > used by all service.
 
