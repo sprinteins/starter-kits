@@ -4,6 +4,7 @@
   - [Kits](#kits)
     - [Back End](#back-end)
     - [Front End](#front-end)
+    - [Project Structure](#project-structure)
   - [How to Install](#how-to-install)
   - [How to Use](#how-to-use)
 
@@ -16,15 +17,19 @@ for multiple technology combinations
 
 ### Back End
 
-1. [Node + Express + TypeScript](./node-typescript) (NET)  
+- [Node + Express + TypeScript](./node-typescript) (NET)  
   Good for all sort of BE services
-2. [Go](./go) (GO)  
+- [Go](./go) (GO)  
   Good for all sort of BE services
   
 ### Front End
 
-1. [React + Storybook+ TypeScript](./react-storybook-typescript) (RST)  
+- [React + Storybook+ TypeScript](./react-storybook-typescript) (RST)  
   Good for UI-Libs and Apps
+
+### Project Structure
+
+- [Micro-Services in Polyrepo](./microservices-polyrepo/Architecture.md)
   
 ## How to Install
 
