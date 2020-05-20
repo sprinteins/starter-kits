@@ -18,10 +18,10 @@ npx degit sprinteins/starter-kits/react-storybook-typescript <target-folder>
 
 ## Quick Start
 
-* `make run`: starts storybook
-* `make dev`: starts development in TDD mode
-* `make build`: builds the lib
-* `make exec`: starts the development container and enter its shell
+- `make run`: starts storybook
+- `make dev`: starts development in TDD mode
+- `make build`: builds the lib
+- `make exec`: starts the development container and enter its shell
 
 ## How to Build
 
@@ -49,10 +49,10 @@ It is reachable at [http://localhost:9000](http://localhost:9000)
 Using Docker streamlines both process.  
 However, if necessary we develop and build the project without Docker:
 
-* to develop: `yarn install && yarn tdd`
-* to run: `yarn install && yarn start`
-* to build storybook: `yarn install && yarn build`
-* to build the lib: `yarn install --prod && yarn build-lib`
+- to develop: `yarn install && yarn tdd`
+- to run: `yarn install && yarn start`
+- to build storybook: `yarn install && yarn build`
+- to build the lib: `yarn install --prod && yarn build-lib`
 
 ## Component File Structure
 
@@ -73,7 +73,7 @@ Each component has a folder with the name of the component (e.g.: `button/`)
 
 In this folder there are required files:
 
-* `<component.jsx>` is where the component lives (e.g.: `button.tsx`)  
+- `<component.jsx>` is where the component lives (e.g.: `button.tsx`)  
   >⚠ If the component gets too big, split it up into sub-components: `<sub-component>.tsx`
 
   ✏️ Example: [button.tsx](./src/components/button/button.tsx)
@@ -104,7 +104,7 @@ In this folder there are required files:
   function noopOnClick() { }
   ```
 
-* `index.ts`: we think of the folder as a package and `index.ts` exports everything
+- `index.ts`: we think of the folder as a package and `index.ts` exports everything
   that is meant for public usage.  
   ✏️ Example: [index.ts](./src/components/button/index.ts)
 
@@ -112,7 +112,7 @@ In this folder there are required files:
   export { default as Button } from './button'
   ```
 
-* `<component>.stories.tsx` creates style guide stories for the component.
+- `<component>.stories.tsx` creates style guide stories for the component.
   Style guide stories demonstrate, among other thins, the different visual appearances.  
   ✏️ Example: [button.stories.tsx](./src/components/button/button.stories.tsx)
 
@@ -129,7 +129,7 @@ In this folder there are required files:
 
   ```
 
-* `<component>.spec.stories.tsx` contain the stories that setup components for the tests
+- `<component>.spec.stories.tsx` contain the stories that setup components for the tests
   > ⚠ Why not `<component>.stories.spec.tsx`?  
   > Everything ending with `*.spec` are considered to be tests and would be confusing for developers  
   > See `<component>.spec.ts`
@@ -162,11 +162,11 @@ In this folder there are required files:
   }
   ```
 
-* `<component>.spec.ts` contains the component tests  
+- `<component>.spec.ts` contains the component tests  
   In case the spec gets too large on can split up and prefix specs e.g.:
-  * `<component>.awesomeFeature.spec.tsx`
-  * `<component>.nastyBugs.spec.tsx`
-  * `<component>.crazyEdgeCases.spec.tsx`
+  - `<component>.awesomeFeature.spec.tsx`
+  - `<component>.nastyBugs.spec.tsx`
+  - `<component>.crazyEdgeCases.spec.tsx`
 
   ✏️ Example: [button.spec.tsx](./src/components/button/button.spec.ts)
 
