@@ -12,6 +12,14 @@ To pay back debt, first, one needs to identify it, than track it and lastly, it 
 
 This starter kit has been designed to be as simple as possible. This is important because it must be usable in different projects with different tech stacks.
 
+## Installation
+
+> **Info:** The `--force` is needed if the `<target-folder>` is not empty
+
+```sh
+npx degit --force sprinteins/starter-kits/technical-debt-tracking <target-folder>
+```
+
 ## Structure
 
 - Technical Debt Tracking kit has only one required file: [TECHNICAL_DEBT.md](./../TECHNICAL_DEBT.md). It containes the description and the how-to.
