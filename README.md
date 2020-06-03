@@ -1,12 +1,9 @@
 # 🧰 Starter Kits
 
-- [🧰 Starter Kits](#%f0%9f%a7%b0-starter-kits)
-  - [Kits](#kits)
-    - [Back End](#back-end)
-    - [Front End](#front-end)
-    - [Project Structure](#project-structure)
-  - [How to Install](#how-to-install)
-  - [How to Use](#how-to-use)
+**[Kits](#kits)** | **[Back End](#back-end)** | **[Front End](#front-end)** | **[Project Structure](#project-structure)** |
+**[How to Install](#how-to-install)** | **[How to Use](#how-to-use)**
+
+![License](https://img.shields.io/github/license/sprinteins/starter-kits)
 
 Starter Kits provides _ready-to-go_ project scaffolding
 for multiple technology combinations
