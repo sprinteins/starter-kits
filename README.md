@@ -48,26 +48,6 @@ for multiple technology combinations
   2. choose one of the kits
   3. copy one of the kits: `cp -R <starter-kit> <target-folder>`
 
-## How to Use
-
-All the starter kits use the same makefile structure:
-
-<dl>
-  <dt>make dev</dt>
-    <dd>Starts a TDD style container (unit tests + file watcher)</dd>
-  <dt>make run</dt>
-    <dd>Starts the service with a file watcher</dd>
-  <dt>make build</dt>
-    <dd>Builds the production docker image</dd>
-  <dt>make test</dt>
-    <dd>Runs the unit tests in CI mode (no file watcher)</dd>
-  <dt>make exec</dt>
-    <dd>
-      Starts only the development container and enters its shell.<br/>
-      Similar to "docker exec".
-    </dd>
-</dl>
-
 ----
 
 Brought to you by
