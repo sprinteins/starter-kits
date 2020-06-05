@@ -1,6 +1,6 @@
 # 🧰 Starter Kits
 
-**[Kits](#kits)** | **[Back End](#-back-end)** | **[Front End](#front-end)** | **[Project Structure](#project-structure)** | **[Documentation](#-documentation)** |
+**[Kits](#kits)** | **[Back End](#-back-end)** | **[Front End](#-front-end)** | **[Project Structure](#-project-structure)** | **[Documentation](#-documentation)** |
 **[How to Install](#how-to-install)** | **[How to Use](#how-to-use)**
 
 
@@ -10,17 +10,6 @@ Starter Kits provides _ready-to-go_ project scaffolding
 for multiple technology combinations
 
 > 🗒  **Note:** Requirements of a Starter Kit: [CONTRIBUTING.md](./CONTRIBUTING.md)
-
-- [🧰 Starter Kits](#-starter-kits)
-  - [Kits](#kits)
-    - [🏢 Back End](#-back-end)
-    - [🎭 Front End](#-front-end)
-    - [🎡 Project Structure](#-project-structure)
-    - [🗂 Documentation](#-documentation)
-  - [How to Install](#how-to-install)
-  - [How to Use](#how-to-use)
-
-## Kits
 
 ### 🏢 Back End
 
