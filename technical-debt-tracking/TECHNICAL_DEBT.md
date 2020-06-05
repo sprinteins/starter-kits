@@ -69,8 +69,8 @@ There are two scripts that makes finding and counting technical-debt easy:
   > **Info**: [↗ Cyclomatic Complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity)
 
   ```text
-  Tag:      TODO: class-comp
-  Impact:   low
+  Tag:      TODO: complex
+  Impact:   high
   Effort:   low
   ```
 
