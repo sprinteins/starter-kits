@@ -1,7 +1,11 @@
 # 🧰 Starter Kits
 
+<p align=="center">
+
 **[Kits](#kits)** | **[Back End](#-back-end)** | **[Front End](#-front-end)** | **[Project Structure](#-project-structure)** | **[Documentation](#-documentation)** |
 **[How to Install](#how-to-install)** | **[How to Use](#how-to-use)**
+
+</p>
 
 
 ![License](https://img.shields.io/github/license/sprinteins/starter-kits)
