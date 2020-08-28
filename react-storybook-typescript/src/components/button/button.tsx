@@ -1,23 +1,28 @@
-import * as React from 'react'
+import React from 'react';
 
-export function Button(props: React.PropsWithChildren<Props>) {
 
-    const {
-        onClick = noopOnClick,
-        children,
-    } = props;
 
-    return (
-        <button
-            access-id="button"
-            onClick={onClick} >
-            {children}
-        </button>
-    )
-}
+/**
+ * Primary UI component for user interaction
+ */
+export const Button: React.FC<Props> = ({
+  children,
+  onClick
+}) => {
+  return (
+    <button onClick={onClick} access-id="button">
+      {children}
+    </button>
+  );
+};
 
-interface Props {
-    onClick?: () => void
-}
-
-function noopOnClick() { }
+export interface Props {
+    /**
+     * The children are displayed inside the button
+     */
+    children: React.ReactElement;
+    /**
+     * Optional click handler
+     */
+    onClick?: () => void;
+  }
