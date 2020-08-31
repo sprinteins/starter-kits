@@ -4,7 +4,7 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "engines": {
-    "node": ">=10.00"
+    "node": ">=13.00"
   },
   "description": "",
   "scripts": {
@@ -18,32 +18,36 @@
     "test-ci": "./scripts/npm-test-ci.sh",
     "local-links": "./scripts/npm-local-links.sh",
     "postinstall": "./scripts/npm-postinstall.sh",
-    "concurrently": "concurrently"
+    "concurrently": "concurrently",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@storybook/react": "^5.3.14",
     "@types/node": "^13.7.7",
-    "react": "^16.13.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "typescript": "^3.8.3"
   },
   "devDependencies": {
     "@babel/core": "^7.8.6",
-    "@storybook/react": "^5.3.14",
+    "@storybook/addon-actions": "^6.0.20",
+    "@storybook/addon-essentials": "^6.0.20",
+    "@storybook/addon-links": "^6.0.20",
+    "@storybook/react": "^6.0.20",
     "@types/chai": "^4.2.10",
     "@types/mocha": "^7.0.2",
     "@types/node-fetch": "^2.5.5",
     "@types/puppeteer": "^2.0.1",
-    "awesome-typescript-loader": "^5.2.1",
-    "babel-loader": "^8.0.6",
+    "babel-loader": "^8.1.0",
     "chai": "^4.2.0",
     "concurrently": "^5.1.0",
     "mocha": "^7.1.0",
     "nodemon": "^2.0.2",
     "puppeteer": "^2.1.1",
-    "react-dom": "^16.13.1",
+    "react-is": "^16.13.1",
     "ts-node": "^8.6.2"
   }
 }

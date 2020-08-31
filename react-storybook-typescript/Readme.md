@@ -16,6 +16,13 @@ npx degit sprinteins/starter-kits/react-storybook-typescript <target-folder>
 - Standalone UI Library
 - SPA with integrated UI Library
 
+## Technology Stack
+
+- React
+- Storybook
+- Chrome Puppeteer
+- 
+
 ## Quick Start
 
 * `make run`: starts storybook

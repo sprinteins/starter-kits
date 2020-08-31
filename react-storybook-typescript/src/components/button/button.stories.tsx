@@ -1,10 +1,26 @@
-
-import * as React from 'react';
-import { Button } from "./button"
+import React from 'react';
+import { Story, Meta } from '@storybook/react';
+import { Button, Props } from './button';
 
 export default {
+    title: 'Components/Button',
     component: Button,
-    title: 'Components|Button',
-};
+} as Meta;
 
-export const text = () => <Button>Hello, Button!</Button>;
+const Template: Story<Props> = ({
+    children,
+    onClick,
+}) => {
+
+    return (
+        <Button onClick={onClick}>
+            {children}
+        </Button>
+    );
+}
+
+export const Default = Template.bind({});
+Default.args = {
+    children: 'Button',
+    onClick: () => { console.log('clicked') },
+};

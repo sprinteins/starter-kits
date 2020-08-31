@@ -1,10 +1,10 @@
 
-import * as React from 'react';
+import React from 'react';
 import { Button } from "./button"
 
 export default {
     component: Button,
-    title: 'Components|Button/Tests',
+    title: 'Components/Button/Tests',
 };
 
 export const TestOnClick = () => {
@@ -16,8 +16,9 @@ export const TestOnClick = () => {
             <Button
                 onClick={() => setText("clicked")}
             >
-                Click to set text 1
-                </Button>
+                <span>click to set text</span>
+            </Button>
+            
             <div access-id="text-target">{text}</div>
         </div>
     )
